@@ -1,6 +1,12 @@
-function identity <T>(age: T): T {
-    return age;
-}
+// function identity <T>(age: T): T {
+//     return age;
+// }
+
+
+
+
+
+
 // cosnt myHobbies = identity<string[]>(["suzish"," kitob Oqish", "dam olish"]);
 
 
@@ -73,24 +79,53 @@ function identity <T>(age: T): T {
 
 
 
-function getPropertyValue<T, K extends keyof T>(obj: T, key: K): T[K] {
-    return obj[key];
+// function getPropertyValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+//     return obj[key];
+// }
+// const car = {
+//     brand: "BMW",
+//     yil: 2020,
+//     speed: 430,
+// };
+
+// const brandValue = getPropertyValue(car, "brand");
+// console.log(brandValue); 
+
+// const yearValue = getPropertyValue(car, "yil");
+// console.log(yearValue); 
+
+
+
+
+
+
+
+
+// ----------------------------------------------------------------AMALIYOT----------------------------------------------------------------
+
+
+
+
+
+
+
+// Fibonacci ketma-ketligini chiqarish funksiyasi
+function fibonacci(n: number): number[] {
+    let fib: number[] = [0, 1];  // Boshlang'ich qiymatlar: 0 va 1
+    for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2]; // Keyingi qiymatlarni hisoblash
+    }
+    return fib;
 }
-const car = {
-    brand: "BMW",
-    yil: 2020,
-    speed: 430,
-};
 
-const brandValue = getPropertyValue(car, "brand");
-console.log(brandValue); 
+// Foydalanuvchidan n qiymatini olish
+let n = parseInt(prompt("n sonini kiriting:") || "0", 10);
 
-const yearValue = getPropertyValue(car, "yil");
-console.log(yearValue); 
-
-
-
-
-
-
+// Agar foydalanuvchi 2 dan kichik son kiritsa, tegishli javob beriladi
+if (n <= 0) {
+    console.log("n musbat son bo'lishi kerak.");
+} else {
+    console.log(`Fibonacci ketma-ketligi (${n} songacha):`);
+    console.log(fibonacci(n));  // Ketma-ketlikni chiqarish
+}
 

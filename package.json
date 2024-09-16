@@ -1,0 +1,17 @@
+{
+  "name": "aa",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "set NODE_ENV=development && nodemon dist/main.js",
+    "prod": "set NODE_ENV=production && node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

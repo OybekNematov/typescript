@@ -1,7 +1,6 @@
-"use strict";
-function identity(age) {
-    return age;
-}
+// function identity <T>(age: T): T {
+//     return age;
+// }
 // cosnt myHobbies = identity<string[]>(["suzish"," kitob Oqish", "dam olish"]);
 // function findMaxE1<T extends string | number>(arr: T[]): T | null {
 //     if (arr.length) {
@@ -24,8 +23,90 @@ function identity(age) {
 // const job = { title: "Developer", salary: 5000 };
 // const merged = mergeObjects(person, job);
 // console.log(merged);
-const myCar = {
-    id: 45,
-    vehicles: 4,
-    speed: 220,
-};
+// const myCar: Car <number> = {
+//     id: 45,
+//     vehicles: 4,
+//     speed: 220,
+// };
+// interface Demo <KEY, VALUE> {
+//     key: KEY
+//     value: VALUE,
+// }
+// let myHome = {
+//     address: "fdsadsa",
+//     home: 58,
+// }
+// function getPropertyValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+//     return obj[key];
+// }
+// const car = {
+//     brand: "BMW",
+//     yil: 2020,
+//     speed: 430,
+// };
+// const brandValue = getPropertyValue(car, "brand");
+// console.log(brandValue); 
+// const yearValue = getPropertyValue(car, "yil");
+// console.log(yearValue); 
+// ----------------------------------------------------------------AMALIYOT----------------------------------------------------------------
+
+
+
+//  1-masala ---------------------------------------------------
+
+
+// function fibonacci(n) {
+//     var fib = [0, 1]; 
+//     for (var i = 2; i < n; i++) {
+//         fib[i] = fib[i - 1] + fib[i - 2]; 
+//     }
+//     return fib;
+// }
+// var n = parseInt(prompt("n sonini kiriting:") || "0", 10);
+// if (n <= 0) {
+//     console.log("n musbat son bo'lishi kerak.");
+// }
+// else {
+//     console.log("Fibonacci ketma-ketligi (".concat(n, " songacha):"));
+//     console.log(fibonacci(n)); 
+// }
+
+// 2-masala ----------------------------------------------------------------
+// type Person = {
+//     ism: string;     
+//     yosh: number;    
+//     kasb: string;   
+// };
+// let shaxs: Person = {
+//     ism: "Oybek",
+//     yosh: 19,
+//     kasb: "Dasturchi"
+// };
+// console.log(`Ismi: ${shaxs.ism}`);
+// console.log(`Yoshi: ${shaxs.yosh}`);
+// console.log(`Kasbi: ${shaxs.kasb}`);
+// 3-massala ----------------------------------------------------------------
+// interface Car {
+//     nomi: string;
+//     modeli: string;
+//     yili: number;
+//     speed: number;   
+// }
+// let mashina: Car = {
+//     nomi: "BMW",    
+//     modeli: "M8",
+//     yili: 2024,
+//     speed: 486         
+// };
+// console.log(`Mashina nomi: ${mashina.nomi}`);
+// console.log(`Modeli: ${mashina.modeli}`);
+// console.log(`Yili: ${mashina.yili}`);
+// console.log(`speed: ${mashina.speed}`)
+// 4-massala ----------------------------------------------------------------
+// type Yigindilar = (a: number, b: number) => number;
+// const yigindi: Yigindilar = (a: number, b: number): number => {
+//     return a + b;
+// };
+// let natija = yigindi(5, 7);  
+// console.log(`Yigindisi: ${natija}`);
+// 5-massala ----------------------------------------------------------------
